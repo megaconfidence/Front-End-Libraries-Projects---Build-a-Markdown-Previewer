@@ -4,7 +4,6 @@ import Editor from './components/editor.component';
 import Preview from './components/preview.component';
 import Mode from './components/mode.component';
 import './App.css';
-// import './fcc';
 import Marked from './marked';
 
 function App() {
@@ -121,7 +120,16 @@ function App() {
       copyFeedBackDisplayRef.current.style.display = 'none';
     }, 1000);
   };
-
+  Marked.setOptions({
+    renderer: new Marked.Renderer(),
+    pedantic: false,
+    gfm: true,
+    breaks: true,
+    sanitize: false,
+    smartLists: true,
+    smartypants: false,
+    xhtml: false
+  });
   return (
     <>
       <div className='app'>
