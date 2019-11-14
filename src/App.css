@@ -1,6 +1,11 @@
+body {
+  overflow: hidden;
+}
+h1 {
+  margin-left: 20px;
+}
 .app {
   display: flex;
-  margin-top: 40px;
   height: calc(100vh - 68px);
 }
 .container {
@@ -13,12 +18,12 @@
   flex-direction: column;
 }
 .title {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: bold;
   margin-bottom: 10px;
   padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 #editor {
-
   resize: none;
   flex-grow: 1;
   overflow: auto;
@@ -30,7 +35,6 @@
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 #preview {
-
   flex-grow: 1;
   flex-shrink: 1;
   overflow: auto;
@@ -63,4 +67,17 @@ code {
   padding: 10px 5px;
   background: #f1f1f1;
   display: inline-block;
+}
+@media (max-width: 503px) {
+  .app {
+    padding: 0 10px;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body {
+    overflow: unset;
+  }
 }

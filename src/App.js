@@ -96,6 +96,7 @@ function App() {
 
   return (
     <>
+    <h1>Markdown Previewer</h1>
       <div className='app'>
         <div className='container'>
           <div className='title'>EDITOR</div>
