@@ -4,6 +4,9 @@ body {
 h1 {
   margin-left: 20px;
 }
+h1 a {
+  font-size: 0.6em;
+}
 .app {
   display: flex;
   height: calc(100vh - 68px);
