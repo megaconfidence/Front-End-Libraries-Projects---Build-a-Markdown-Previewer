@@ -96,7 +96,7 @@ function App() {
 
   return (
     <>
-    <h1>Markdown Previewer <a href="https://github.com/Confidence-Okoghenun/Front-End-Libraries-Projects---Build-a-Drum-Machine">(GitHub)</a></h1>
+    <h1>Markdown Previewer <a href="https://github.com/Confidence-Okoghenun/Front-End-Libraries-Projects---Build-a-Markdown-Previewer">(GitHub)</a></h1>
       <div className='app'>
         <div className='container'>
           <div className='title'>EDITOR</div>
